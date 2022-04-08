@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 7장 연습문제 5-1 </title>
+</head>
+<body>
+	<%
+		Cookie[] cooks = request.getCookies();
+	
+		for(int count=0; count<cooks.length; count++){
+			cooks[count].setMaxAge(0);
+			response.addCookie(cooks[count]);
+		}
+		response.sendRedirect("test07_05_02.jsp");
+	%>
+</body>
+</html>
