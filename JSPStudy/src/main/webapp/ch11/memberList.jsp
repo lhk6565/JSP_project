@@ -17,14 +17,22 @@
 	
 	Class.forName(driverName);
 	conn = DriverManager.getConnection(url, username, password);
-	Statement sm = conn.createStatement();
 	
-	int count = sm.executeUpdate(sql);
-	if(count==1){
-		out.println("회원 가입 성공!");
-	}else{
-		out.println("회원 가입 실패!");
+	Statement sm = conn.createStatement();
+	ResultSet rs = sm.executeQuery("SELECT id, email, signuptime FROM members");
+	
+	String str = "";
+	int count = 1;
+	
+	while(rs.next()){
+		str += count + " : " + rs.getString("id") + " / " + rs.getString("email")
+			+ " / " + rs.getString("signuptime") + "<br>";
+		count++;
 	}
+	out.print("Home > 회원 가입 명단 <hr>");
+	out.print(str);
+	
+	rs.close();
 	sm.close();
 	conn.close();
 %>
