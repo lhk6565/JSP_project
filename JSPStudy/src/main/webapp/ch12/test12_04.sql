@@ -1,0 +1,9 @@
+USE odbo2;
+
+CREATE TABLE IF NOT EXISTS testboard(
+	id VARCHAR(20) PRIMARY KEY,
+	writetext VARCHAR(50),
+	singuptime TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+	);
+	
+DESC testboard;
