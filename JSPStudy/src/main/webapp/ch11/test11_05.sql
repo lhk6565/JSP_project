@@ -1,0 +1,10 @@
+USE odbo2;
+
+CREATE TABLE IF NOT EXISTS department(
+	name VARCHAR(20) PRIMARY KEY,
+	passwd VARCHAR(20),
+	dept VARCHAR(50),
+	signuptime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+	);
+
+DESC department
