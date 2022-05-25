@@ -22,14 +22,14 @@
 </script>
 </head>
 <body>
-	<form name="loginForm" action="login_process.jsp" method="post" style="width:225px" onsubmit="return checkFn()">
+	<form name="loginForm" action="login_process.jsp" method="post" style="width:100%" onsubmit="return checkFn()">
 		<fieldset>
 			<div align="center">
 				<div>
-					<input type="text" name="user_id" placeholder="아이디" style="width:200px;height:15px"><br>
+					<input type="text" name="user_id" placeholder="아이디" style="width:100%;height:15px"><br>
 				</div>
 				<div>
-					<input type="password" name="user_pw" placeholder="비밀번호" style="width:200px;height:15px">
+					<input type="password" name="user_pw" placeholder="비밀번호" style="width:100%;height:15px">
 				</div><br>
 			</div>
 			<div align="center">
