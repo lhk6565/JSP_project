@@ -17,4 +17,3 @@ CREATE TABLE IF NOT EXISTS options(
 	);
 
 DESC options;
-DELETE FROM options;
