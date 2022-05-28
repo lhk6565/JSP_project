@@ -26,7 +26,7 @@
 		str += "</td></tr>";
 		count++;
 	}
-	out.print("설문 리스트");
+	out.print(" 설문 리스트 ");
 	out.print("<input type=\"button\"value=\" 설문 추가 \" onclick=\"addPoll()\">");
 	out.print("<hr>");
 	out.print(str);

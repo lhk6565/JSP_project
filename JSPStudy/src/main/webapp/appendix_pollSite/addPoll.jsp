@@ -7,7 +7,7 @@
 <title>설문 조사 사이트</title>
 <script type="text/javascript">
 	function viewPollList(){
-		document.loaction.href="viewPollList.jsp";
+		document.location.href="viewPollList.jsp";
 	}
 	function checkFun(){
 		var f = document.inputForm
