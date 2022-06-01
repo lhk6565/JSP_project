@@ -37,7 +37,7 @@
 				<input type="reset" value="다시작성">
 			</div>
 			<div align="right" style="font-size:10px">
-				<a href=#>회원가입</a>
+				<a href="usersignup.jsp">회원가입</a>
 			</div>
 		</fieldset>	
 	</form>
