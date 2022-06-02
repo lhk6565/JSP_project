@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,6 +20,9 @@
 			return false;
 		}
 	}
+	function usersignup(){
+		document.location.href="usersignup.jsp";
+	}
 </script>
 </head>
 <body>
@@ -34,10 +38,7 @@
 			</div>
 			<div align="center">
 				<input type="submit" value="로그인"> &nbsp;
-				<input type="reset" value="다시작성">
-			</div>
-			<div align="right" style="font-size:10px">
-				<a href="usersignup.jsp">회원가입</a>
+				<input type="button" value="회원가입" onclick="usersignup()">
 			</div>
 		</fieldset>	
 	</form>
