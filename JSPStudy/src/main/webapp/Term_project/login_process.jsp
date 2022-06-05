@@ -26,21 +26,21 @@
 		String sql = "SELECT user_id, user_pw FROM user WHERE user_id = '" + u_id + "'";
 		
 		ResultSet rs = sm.executeQuery(sql);
-		rs.next();
-		
-		if(rs.next() == true && u_id.equals(rs.getString("user_id")) && u_pw.equals(rs.getString("user_pw"))){
-			session.setAttribute("memberID", u_id);
-			session.setAttribute("memberPW", u_pw);
-			out.println("로그인 성공!");
+		if(rs.next()){
+			if(u_id.equals(rs.getString("user_id")) && u_pw.equals(rs.getString("user_pw"))){
+				session.setAttribute("memberID", u_id);
+				session.setAttribute("memberPW", u_pw);
+				out.println("로그인 성공!");
+			}			
 		}
 		else{
 			response.sendRedirect("loginError.jsp");
-		}		
+		}
 	%>
 	<table>
 		<tr>
 			<td>
-				<form action="signip_main.jsp" method="post">
+				<form action="signin_main.jsp" method="post">
 					<input type="submit" value=" 메인 페이지로 이동 ">
 				</form>
 			</td>
