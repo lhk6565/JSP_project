@@ -6,6 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title> 유저 메인 </title>
+<script>
+	function logout(){
+		alert("로그아웃 되었습니다.")
+	}
+</script>
 </head>
 <body>
 	<%
@@ -50,7 +55,7 @@
 				</table>
 			</div>
 			<div align="center">
-				<input type="submit" value="로그아웃">
+				<input type="submit" value="로그아웃" onclick="logout()">
 			</div>
 		</fieldset>	
 	</form>
