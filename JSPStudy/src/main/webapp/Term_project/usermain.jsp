@@ -8,15 +8,46 @@
 <title> 유저 메인 </title>
 </head>
 <body>
+	<%
+		request.setCharacterEncoding("utf-8");
+		String u_id = request.getParameter("user_id");
+		
+		String driverName="com.mysql.jdbc.Driver";
+		String url = "jdbc:mysql://localhost:3306/odbo2";
+		String username = "root";
+		String password = "123456";
+		Connection conn = null;
+		
+		Class.forName(driverName);
+		conn = DriverManager.getConnection(url, username, password);
+		Statement sm = conn.createStatement();
+		
+		String sql = "SELECT name, stu_id, major, grade FROM user WHERE user_id = '" + u_id + "'";
+		
+		ResultSet rs = sm.executeQuery(sql);
+		rs.next();
+	%>
 	<form name="userForm" action="logout_process.jsp" method="post" style="width:100%">
 		<fieldset>
 			<div align="center">
-				<div>
-					<input type="text" name="user_id" placeholder="아이디" style="width:100%;height:15px"><br>
-				</div>
-				<div>
-					<input type="password" name="user_pw" placeholder="비밀번호" style="width:100%;height:15px">
-				</div><br>
+				<table>
+					<tr>
+						<td>
+							이름 : <%=rs.getString("name") %>&nbsp;
+						</td>
+						<td>
+							학번 : <%=rs.getString("stu_id") %>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							학과 : <%=rs.getString("major") %>&nbsp;
+						</td>
+						<td>
+							학년 : <%=rs.getString("grade") %>
+						</td>
+					</tr>
+				</table>
 			</div>
 			<div align="center">
 				<input type="submit" value="로그아웃">
