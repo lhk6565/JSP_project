@@ -40,8 +40,9 @@
 	<table>
 		<tr>
 			<td>
-				<form action="signin_main.jsp" method="post">
+				<form action="usermain.jsp" method="get">
 					<input type="submit" value=" 메인 페이지로 이동 ">
+					<input type="hidden" name="user_id" value=<%=u_id%>>
 				</form>
 			</td>
 		</tr>
