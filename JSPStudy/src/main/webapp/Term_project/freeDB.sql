@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS odbo2;
+
+USE odbo2;
+
+CREATE TABLE IF NOT EXISTS free(
+	bno int PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(50),
+	expl VARCHAR(2000),
+	viewcnt int default 0,
+	signuptime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+	
+USE odbo2;
+DESC free;
+SELECT * FROM free;
+
+
