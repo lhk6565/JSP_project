@@ -17,7 +17,7 @@
 
 	while(rs.next()){
 		str+="<tr><td>"+count+"</td>";
-		str+="<td><a href = freeInform.jsp?bno="+rs.getInt("bno")+" target=\"_blank\">"+rs.getString("title")+"</a></td>";
+		str+="<td><a href = freeInform.jsp?bno="+rs.getInt("bno")+">"+rs.getString("title")+"</a></td>";
 		str+="<td>"+rs.getString("signuptime")+"</td></tr>";
 		count++;	
 	}    
