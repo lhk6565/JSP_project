@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*" %>
+<%@ include file="dbConn.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,14 +22,6 @@
 		sql += "('" + u_id + "','" + u_pw + "','" + u_name + "','" + stu_id + "','" + u_major + "','" + 
 				u_gr + "','" + u_phone + "','" + u_mail + "')";
 		
-		String driverName="com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://localhost:3306/odbo";
-		String username = "root";
-		String password = "1234";
-		Connection conn = null;
-		
-		Class.forName(driverName);
-		conn = DriverManager.getConnection(url, username, password);
 		Statement sm = conn.createStatement();
 		
 		int count = sm.executeUpdate(sql);
