@@ -21,7 +21,7 @@
 	
 		
 		str+="<tr><td>"+count+"</td>";
-		str+="<td><a href = inform.jsp?bno="+rs.getInt("bno")+" target=\"_blank\">"+rs.getString("title")+"</a></td>";
+		str+="<td><a href = inform.jsp?bno="+rs.getInt("bno")+">"+rs.getString("title")+"</a></td>";
 		str+="<td>"+rs.getString("major")+"</td>";
 		str+="<td>"+rs.getString("price")+"</td>";
 		str+="<td>"+rs.getString("signuptime")+"</td></tr>";
