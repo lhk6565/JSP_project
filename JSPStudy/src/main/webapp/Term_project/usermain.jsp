@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.sql.*" %>
+<%@ include file="dbConn.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,14 +17,6 @@
 		request.setCharacterEncoding("utf-8");
 		String u_id = (String) session.getAttribute("memberID");
 		
-		String driverName="com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://localhost:3306/odbo";
-		String username = "root";
-		String password = "1234";
-		Connection conn = null;
-		
-		Class.forName(driverName);
-		conn = DriverManager.getConnection(url, username, password);
 		Statement sm = conn.createStatement();
 		
 		String sql = "SELECT name, stu_id, major, grade FROM user WHERE user_id = '" + u_id + "'";
