@@ -82,7 +82,7 @@
 					<td>
 						<select name = "major" style="margin-left:13px">
 							<option value = "choice"> 학과 </option>
-								<option value="컴뷰터공학부">컴퓨터공학부</option>
+								<option value="컴퓨터공학부">컴퓨터공학부</option>
 								<option value="게임공학부">게임공학부</option>
 								<option value="기계공학과">기계공학과</option>
 								<option value="기계설계공학과">기계설계공학과</option>

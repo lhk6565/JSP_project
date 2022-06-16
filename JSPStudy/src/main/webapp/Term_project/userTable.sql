@@ -1,4 +1,4 @@
-USE odbo2;
+USE odbo;
 
 CREATE TABLE IF NOT EXISTS user(
 	user_id VARCHAR(20),

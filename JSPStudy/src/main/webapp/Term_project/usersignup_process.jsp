@@ -23,9 +23,9 @@
 				u_gr + "','" + u_phone + "','" + u_mail + "')";
 		
 		String driverName="com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://localhost:3306/odbo2";
+		String url = "jdbc:mysql://localhost:3306/odbo";
 		String username = "root";
-		String password = "123456";
+		String password = "1234";
 		Connection conn = null;
 		
 		Class.forName(driverName);

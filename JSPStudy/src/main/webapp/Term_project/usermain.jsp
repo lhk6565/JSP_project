@@ -15,12 +15,12 @@
 <body>
 	<%
 		request.setCharacterEncoding("utf-8");
-		String u_id = request.getParameter("user_id");
+		String u_id = (String) session.getAttribute("memberID");
 		
 		String driverName="com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://localhost:3306/odbo2";
+		String url = "jdbc:mysql://localhost:3306/odbo";
 		String username = "root";
-		String password = "123456";
+		String password = "1234";
 		Connection conn = null;
 		
 		Class.forName(driverName);

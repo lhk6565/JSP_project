@@ -14,9 +14,9 @@
 		String u_pw = request.getParameter("user_pw");
 		
 		String driverName="com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://localhost:3306/odbo2";
+		String url = "jdbc:mysql://localhost:3306/odbo";
 		String username = "root";
-		String password = "123456";
+		String password = "1234";
 		Connection conn = null;
 		
 		Class.forName(driverName);
@@ -40,7 +40,7 @@
 	<table>
 		<tr>
 			<td>
-				<form action="signin_main.jsp" method="get">
+				<form action="main2.jsp" method="get">
 					<input type="submit" value=" 메인 페이지로 이동 ">
 					<input type="hidden" name="user_id" value=<%=u_id%>>
 				</form>
