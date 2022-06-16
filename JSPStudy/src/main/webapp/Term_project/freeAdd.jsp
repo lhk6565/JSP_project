@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<title> 자유게시판 </title>
 	<script type="text/javascript">
-		function checkFun(){
+		function checktitle(){
 			if(document.free.title.value=="")
 			{
 				alert("제목을 입력해 주세요");	
@@ -45,7 +45,7 @@
 			<tr>
 				<td>
 					<form method="post">
-						<input type="button" value= "게시" onclick="checkFun()">
+						<input type="button" value= "게시" onclick="checktitle()">
 					</form>				
 				</td>
 				<td>

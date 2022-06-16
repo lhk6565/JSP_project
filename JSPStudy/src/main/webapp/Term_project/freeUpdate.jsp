@@ -28,7 +28,7 @@
 	<meta charset="UTF-8">
 	<title> 게시글 수정하기 </title>
 	<script type="text/javascript">
-		function checkFun(){
+		function checkexpl(){
 			if(document.change.title.value=="")
 			{
 				alert("제목을 입력해 주세요");	
@@ -67,7 +67,7 @@
 			<tr>
 				<td>
 					<form method="post">
-						<input type="button" value= "수정하기" onclick="checkFun()">
+						<input type="button" value= "수정하기" onclick="checkexpl()">
 					</form>				
 				</td>
 				<td>

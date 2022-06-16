@@ -27,7 +27,7 @@
 <html>
 <head>
 <script>
-	function fun(bno) {
+	function del(bno) {
 		if(!confirm("이 글을 삭제하시겠습니까?")){
 			alert("취소하셨습니다.")
 		}else{
@@ -80,7 +80,7 @@
 			</td>
 			<td>
 				<form action="delete.jsp?bno=<%=rs.getInt("bno")%>" method="post">
-					<input type="button" value="게시글 삭제" onclick="fun(<%=rs.getInt("bno")%>)">  &nbsp;&nbsp;
+					<input type="button" value="게시글 삭제" onclick="del(<%=rs.getInt("bno")%>)">  &nbsp;&nbsp;
 				</form>
 			</td>
 			<td>

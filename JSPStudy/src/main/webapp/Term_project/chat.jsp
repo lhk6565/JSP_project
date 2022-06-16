@@ -31,7 +31,7 @@
 	<meta charset="UTF-8">
 	<title> 댓글 올리기 </title>
 	<script type="text/javascript">
-		function checkFun(){
+		function checkChat(){
 			if(document.chat.title.value=="")
 			{
 				alert("작성자를 입력해 주세요");	
@@ -71,7 +71,7 @@
 			<tr>
 				<td>
 					<form method="post">
-						<input type="button" value= "게시" onclick="checkFun()">
+						<input type="button" value= "게시" onclick="checkChat()">
 					</form>				
 				</td>
 				<td>

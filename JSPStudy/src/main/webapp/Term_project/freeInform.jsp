@@ -28,7 +28,7 @@
 <html>
 <head>
 <script>
-	function fun(bno) {
+	function freeDelete(bno) {
 		if(!confirm("이 글을 삭제하시겠습니까?")){
 			alert("취소하셨습니다.")
 		}else{
@@ -65,18 +65,13 @@
 	<table border="0">
 		<tr>
 			<td>
-				<form action="chat.jsp?bno=<%=rs.getInt("bno")%>" method="post">
-					<input type="submit" value= " 댓글 달기 " >&nbsp;&nbsp;
-				</form>				
-			</td>
-			<td>
 				<form action="freeUpdate.jsp?bno=<%=rs.getInt("bno")%>" method="post">
 					<input type= "submit" value=" 게시글 수정 " )">  &nbsp;&nbsp;
 				</form>
 			</td>
 			<td>
 				<form action="freeDelete.jsp?bno=<%=rs.getInt("bno")%>" method="post">
-					<input type="button" value="게시글 삭제" onclick="fun(<%=rs.getInt("bno")%>)">  &nbsp;&nbsp;
+					<input type="button" value="게시글 삭제" onclick="freeDelete(<%=rs.getInt("bno")%>)">  &nbsp;&nbsp;
 				</form>
 			</td>
 			<td>
