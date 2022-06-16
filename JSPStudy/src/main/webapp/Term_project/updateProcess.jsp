@@ -33,8 +33,6 @@
 
 	if(count==1){
 		out.println("수정에 성공했습니다");
-	}else{
-		response.sendRedirect("updateFail.jsp");
 	}
 	
 %>

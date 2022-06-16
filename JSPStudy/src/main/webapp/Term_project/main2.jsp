@@ -24,8 +24,12 @@
 		</tr>
 		<tr>
 			<td style = "width:70%; height: 1000px">
-				<input type = "image" src = "image/banner_collabo.jpg" alt = "배너이미지" onclick = "return alertevent()" style = "width: 800px; height:300px"> <br><br>
-				<input type = "image" src = "image/banner_membership.jpg" alt = "배너이미지" onclick = "return alertmembership()" style = "width: 800px; height:300px">
+				<div style="height:500px;border:1">
+					<input type = "image" src = "image/banner_collabo.jpg" alt = "배너이미지" onclick = "return alertevent()" style = "margin-top: 50px;width: 800px; height:300px"> <br><br>
+				</div>
+				<div style="height:500px;border:1">
+					<input type = "image" src = "image/banner_membership.jpg" alt = "배너이미지" onclick = "return alertmembership()" style = "margin-top: 50px;width: 800px; height:300px">
+				</div>
 			</td>
 			<td style = "width:30%; height: 600px">
 				<div align ="center" style = "width:100%; height:20%;">

@@ -66,6 +66,7 @@
 			</table>
 		</fieldset>
 	</form>
+	
 	<table border="0">
 		<tr>
 			<td>

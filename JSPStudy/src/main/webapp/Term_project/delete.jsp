@@ -27,8 +27,6 @@
 	if(count==1){
 		out.println("게시글이 삭제되었습니다");
 		out.print("<input type= \"button\" value=\"돌아가기\" onclick=\"document.location.href = \'view.jsp\'\">");
-	}else{
-		response.sendRedirect("deleteFail.jsp");
 	}
 	
 	pm.close();

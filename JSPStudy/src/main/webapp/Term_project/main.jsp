@@ -18,16 +18,20 @@
 <div align = "center" style = "width : 70%; margin:0 auto">
 	<table style = "width:100%; text-align:center; border:1">
 		<tr>
-			<td colspan = "2" style = "width:100%; height: 200px">
+			<td colspan = "2" style = "width:100%; height: 200px;border:1">
 				<jsp:include page = "header.jsp"/>
 			</td>
 		</tr>
 		<tr>
 			<td style = "width:70%; height: 1000px">
-				<input type = "image" src = "image/banner_collabo.jpg" alt = "배너이미지" onclick = "return alertevent()" style = "width: 800px; height:300px"> <br><br>
-				<form name = "dept" action = "usersignup.jsp" method = "post">
-					<input type = "image" src = "image/banner_membership.jpg" alt = "배너이미지" style = "width: 800px; height:300px">
-				</form>
+				<div style="height:500px;border:1">
+					<input type = "image" src = "image/banner_collabo.jpg" alt = "배너이미지" onclick = "return alertevent()" style = "margin-top: 50px;width: 800px; height:300px"> <br><br>
+				</div>
+				<div style="height:500px">
+					<form name = "dept" action = "usersignup.jsp" method = "post">
+						<input type = "image" src = "image/banner_membership.jpg" alt = "배너이미지" style = "margin-top: 50px;width: 800px; height:300px">
+					</form>
+				</div>
 			</td>
 			<td style = "width:100%; height: 600px">
 				<div align ="center" style = "width:100%; height:20%">
